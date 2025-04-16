@@ -9,511 +9,588 @@
     <!-- fontawesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+    <!-- In HEAD -->
+
+
+     <link rel="shortcut icon" href="./assets/images/favicon-logo.png" type="image/x-icon">
+
+
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body  data-scroll-container>
 
-    <!-- Full-screen hero container -->
-    <header class="hero-section">
+            <!-- Full-screen hero container -->
+            <header class="hero-section" >
 
-        <!-- Navigation Bar -->
-        <nav>
-            <div class="nav-container">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="./assets/images/Goa-Proposed-Logo-1024x243.png" alt="Parul University Logo" />
+                <!-- Navigation Bar -->
+                <nav>
+                    <div class="nav-container">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <img src="./assets/images/Goa-Proposed-Logo-1024x243.png" alt="Parul University Logo" />
+                        </div>
+
+                        <!-- Navigation Links -->
+                        <div class="nav-links">
+                            <a href="#academics">Academic</a>
+                            <a href="#programs">Programs Offered</a>
+                            <a href="#life">Life at PU</a>
+                            <a href="#contact">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Hero Content -->
+                <section class="hero">
+                    <div class="hero-content">
+                        <div class="hero-top">
+                            <span class="welcome-icon">
+                                <img src="./assets/images/graduation-icon.svg" alt="Graduation Cap Icon" />
+                            </span>
+                            <span class="welcome-text">Welcome to</span>
+                        </div>
+                        <h1>A World Class Destination<br>For A World Class University</h1>
+                        <p class="subtext">Gujarat’s Premier Private University</p>
+                        <h2>NOW IN GOA</h2>
+                        <a href="#programs" class="btn-primary">
+                            View All Programs <span>→</span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Scrolling Marquee -->
+                <div class="scrolling-strip">
+                    <div class="scrolling-track">
+                        <span>✳ (Proposed) Goa Commencing June: 2025 ✳ Parul University (Proposed) Goa Commencing June:
+                            2025
+                        </span>
+                        <span>✳ (Proposed) Goa Commencing June: 2025 ✳ Parul University (Proposed) Goa Commencing June:
+                            2025
+                        </span>
+                    </div>
                 </div>
 
-                <!-- Navigation Links -->
-                <div class="nav-links">
-                    <a href="#academics">Academic</a>
-                    <a href="#programs">Programs Offered</a>
-                    <a href="#life">Life at PU</a>
-                    <a href="#contact">Contact Us</a>
+
+
+                <!-- Enquiry Form (Slide-in Panel) -->
+                <div class="enquiry-container active">
+                    <div class="enquiry-btn">Enquire Now</div>
+                    <div class="enquiry-form">
+                        <div class="form-content">
+                            <h3>Enquiry Form</h3>
+                            <form>
+                                <input type="text" placeholder="Name" required />
+                                <input type="email" placeholder="Email" required />
+                                <input type="tel" placeholder="Phone Number" required />
+
+                                <select name="state" required>
+                                    <option value="" disabled selected>Select State</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <!-- Add others -->
+                                </select>
+
+                                <select name="city" required>
+                                    <option value="" disabled selected>Select City</option>
+                                    <option value="Vadodara">Vadodara</option>
+                                    <option value="Panaji">Panaji</option>
+                                </select>
+
+                                <select name="program" required>
+                                    <option value="" disabled selected>Select Program</option>
+                                    <option value="B.Tech">B.Tech</option>
+                                    <option value="MBA">MBA</option>
+                                </select>
+
+                                <select name="specialization" required>
+                                    <option value="" disabled selected>Select Specialization</option>
+                                    <option value="CSE">Computer Science</option>
+                                    <option value="Marketing">Marketing</option>
+                                </select>
+
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
 
-        <!-- Hero Content -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-top">
-                    <span class="welcome-icon">
-                        <img src="./assets/images/graduation-icon.svg" alt="Graduation Cap Icon" />
-                    </span>
-                    <span class="welcome-text">Welcome to</span>
+
+            </header>
+
+
+
+            <!-- gallery section -->
+
+            <section class="gallery-section" >
+                <div class="gallery-container">
+
+                    <!-- Top Image -->
+                    <div class="top-image-container">
+                        <img src="./assets/images/camp.png.png" alt="Top Gallery Image" class="top-image">
+
+                        <!-- Black Overlay -->
+                        <div class="image-overlay"></div>
+
+                        <div class="top-text">
+                            <h2>A Legacy of 3 Decades of Excellence</h2>
+                            <h3>By Parul University in Goa</h3>
+                            <p>
+                                A multidisciplinary destination of learning and innovation in Vadodara, Gujarat,
+                                propelling quality in higher education with a record of being India’s youngest private
+                                university to receive NAAC A++ accreditation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bottom 3 Images -->
+                    <div class="bottom-row">
+                        <div class="gallery-card">
+                            <img src="./assets/images/NIRF-1-768x828.png" alt="Gallery Image 1">
+                        </div>
+                        <div class="gallery-card">
+                            <img src="./assets/images/QS-1-768x828.png" alt="Gallery Image 3">
+                        </div>
+                        <div class="gallery-card">
+                            <img src="./assets/images/NIRF-1-768x828.png" alt="Gallery Image 2">
+                        </div>
+
+                    </div>
+
                 </div>
-                <h1>A World Class Destination<br>For A World Class University</h1>
-                <p class="subtext">Gujarat’s Premier Private University</p>
-                <h2>NOW IN GOA</h2>
-                <a href="#programs" class="btn-primary">
-                    View All Programs <span>→</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- Scrolling Marquee -->
-        <div class="scrolling-strip">
-            <div class="scrolling-track">
-                <span>✳ (Proposed) Goa Commencing June: 2025 ✳ Parul University (Proposed) Goa Commencing June: 2025
-                </span>
-                <span>✳ (Proposed) Goa Commencing June: 2025 ✳ Parul University (Proposed) Goa Commencing June: 2025
-                </span>
-            </div>
-        </div>
+            </section>
 
 
 
-<!-- Enquiry Form (Slide-in Panel) -->
-<div class="enquiry-container active">
-    <div class="enquiry-btn">Enquire Now</div>
-    <div class="enquiry-form">
-      <div class="form-content">
-        <h3>Enquiry Form</h3>
-        <form>
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <input type="tel" placeholder="Phone Number" required />
-  
-          <select name="state" required>
-            <option value="" disabled selected>Select State</option>
-            <option value="Goa">Goa</option>
-            <option value="Gujarat">Gujarat</option>
-            <!-- Add others -->
-          </select>
-  
-          <select name="city" required>
-            <option value="" disabled selected>Select City</option>
-            <option value="Vadodara">Vadodara</option>
-            <option value="Panaji">Panaji</option>
-          </select>
-  
-          <select name="program" required>
-            <option value="" disabled selected>Select Program</option>
-            <option value="B.Tech">B.Tech</option>
-            <option value="MBA">MBA</option>
-          </select>
-  
-          <select name="specialization" required>
-            <option value="" disabled selected>Select Specialization</option>
-            <option value="CSE">Computer Science</option>
-            <option value="Marketing">Marketing</option>
-          </select>
-  
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-  </div>
-        
+            <!-- intro section -->
 
-    </header>
+            <section class="intro-section"  >
+                <div class="intro-container">
+                    <div class="intro-left">
+                        <p class="small-text">Here is what happens when</p>
+                        <h2 class="main-heading">A Unique Global Destination Meets A Leading University</h2>
+                    </div>
+                    <div class="intro-right">
+                        <p>
+                            Parul University (Proposed) Goa is a not-for-profit, world-class institution, nestled in the
+                            heart
+                            of Goa,
+                            established in 2025 by the Parul Education Foundation to redefine higher education through
+                            an
+                            immersive experience
+                            of quality and excellence at the shores of India’s coastal paradise. This is more than just
+                            a
+                            University, this is a
+                            one of a kind experience that turns your education into a lifelong lifestyle of learning,
+                            allowing
+                            you to live your
+                            dreams, while shaping your future.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
 
+            <!-- campus section -->
 
-    <!-- gallery section -->
+            <section class="campus-section"  >
+                <div class="campus-overlay">
 
-    <section class="gallery-section">
-        <div class="gallery-container">
+                </div>
+            </section>
 
-            <!-- Top Image -->
-            <div class="top-image-container">
-                <img src="./assets/images/camp.png.png" alt="Top Gallery Image" class="top-image">
 
-                <!-- Black Overlay -->
-                <div class="image-overlay"></div>
+            <!-- discovery section -->
 
-                <div class="top-text">
-                    <h2>A Legacy of 3 Decades of Excellence</h2>
-                    <h3>By Parul University in Goa</h3>
-                    <p>
-                        A multidisciplinary destination of learning and innovation in Vadodara, Gujarat,
-                        propelling quality in higher education with a record of being India’s youngest private
-                        university to receive NAAC A++ accreditation.
+
+            <section class="discovery-section"  >
+                <div class="discovery-container">
+                    <!-- Left Content -->
+                    <div class="discovery-left">
+                        <p class="small-heading">Academic Excellence</p>
+                        <h2 class="main-heading">
+                            You Will Discover A<br>
+                            One Of A Kind<br>
+                            Destination Of<br>
+                            Learning
+                        </h2>
+                        <p class="desc-text">
+                            Embark on a journey of knowledge, discovery, and growth at Parul University(Proposed) Goa.
+                        </p>
+                        <div class="arrow-button">
+                            <img src="./assets/images/vector-6684e1fbc6b8f.png" alt="curve arrow">
+                            <a href="#" class="apply-btn">Apply Now →</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Image Grid -->
+                    <div class="discovery-right">
+                        <div class="grid-box">
+                            <div class="card" style="background-image: url('./assets/images/one.jpg')">
+                                <div class="card-gradient-overlay"></div>
+                                <div class="overlay-text">Where The Programs Are Global & In-Demand</div>
+                            </div>
+                            <div class="card" style="background-image: url('./assets/images/two.jpg')">
+                                <div class="card-gradient-overlay"></div>
+                                <div class="overlay-text">Where The Campus Has Unique Infrastructure</div>
+                            </div>
+                            <div class="card" style="background-image: url('./assets/images/three.jpg')">
+                                <div class="card-gradient-overlay"></div>
+                                <div class="overlay-text">Where The Educators Are Top of The Industry</div>
+                            </div>
+                            <div class="card" style="background-image: url('./assets/images/four.jpg')">
+                                <div class="card-gradient-overlay"></div>
+                                <div class="overlay-text">Where Learning Is Fun and Vibrant</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="program-section"  >
+                <div class="program-container">
+                    <!-- Left Side -->
+                    <div class="program-left">
+                        <h2>
+                            With Our Unique Industry-<br />
+                            Relevant Programs Designed<br />
+                            For You!
+                        </h2>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="program-right">
+                        <p>Explore Our Upcoming<br />Programs</p>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- tab switching section -->
+
+            <section class="programs-section"  >
+                <div class="programs-container">
+                    <!-- Tabs -->
+                    <div class="programs-tabs">
+                        <button class="programs-tab active" data-tab="diploma">Diploma</button>
+                        <button class="programs-tab" data-tab="bachelor">Bachelor</button>
+                        <button class="programs-tab" data-tab="masters">Masters</button>
+                    </div>
+
+                    <!-- Cards Grid -->
+                    <div class="programs-cards">
+                        <!-- Diploma Cards -->
+                        <div class="programs-tab-content" id="diploma" style="display: block;">
+                            <div class="programs-grid">
+                                <!-- Sample Card -->
+                                <div class="programs-card">
+                                    <img src="./assets/images/Diploma-in-Pharmacy-D.Pharm_-scaled.jpg" alt="Diploma" />
+                                    <div class="programs-card-content">
+                                        <h3>Diploma in Medical Lab Tech</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />10th Pass from a recognized
+                                            board.
+                                        </p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 30,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 45,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong> 40
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                                <div class="programs-card">
+                                    <img src="./assets/images/Diploma-in-Pharmacy-D.Pharm_-scaled.jpg" alt="Diploma" />
+                                    <div class="programs-card-content">
+                                        <h3>Diploma in Medical Lab Tech</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />10th Pass from a recognized
+                                            board.
+                                        </p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 30,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 45,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong> 40
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                                <div class="programs-card">
+                                    <img src="./assets/images/Diploma-in-Pharmacy-D.Pharm_-scaled.jpg" alt="Diploma" />
+                                    <div class="programs-card-content">
+                                        <h3>Diploma in Medical Lab Tech</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />10th Pass from a recognized
+                                            board.
+                                        </p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 30,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 45,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong> 40
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bachelor Cards -->
+                        <div class="programs-tab-content" id="bachelor">
+                            <div class="programs-grid">
+                                <div class="programs-card">
+                                    <img src="./assets/images/B.Scnormal-1-scaled.jpg" alt="BPharm" />
+                                    <div class="programs-card-content">
+                                        <h3>Bachelor of Pharmacy (B.Pharm.)</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />12th with PCM/PCB from a
+                                            recognized
+                                            board.</p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong>
+                                            100
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                                <div class="programs-card">
+                                    <img src="./assets/images/B.Tech_.-Computer-Science-Engineering-scaled.jpg"
+                                        alt="BPT" />
+                                    <div class="programs-card-content">
+                                        <h3>Bachelor of Physiotherapy (BPT)</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />12th with PCB from a recognized
+                                            board.
+                                        </p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong>
+                                            100
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                                <div class="programs-card">
+                                    <img src="./assets/images/Bachelor-of-Business-Administration-scaled.jpg"
+                                        alt="Nursing" />
+                                    <div class="programs-card-content">
+                                        <h3>B.Sc. in Nursing</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />12th with PCB & English with 45%
+                                            (Gen)/40% (Res).</p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong>
+                                            60
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                                <div class="programs-card">
+                                    <img src="./assets/images/Bachelor-of-Business-Administration-scaled.jpg"
+                                        alt="Nursing" />
+                                    <div class="programs-card-content">
+                                        <h3>B.Sc. in Nursing</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />12th with PCB & English with 45%
+                                            (Gen)/40% (Res).</p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong>
+                                            60
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                                <div class="programs-card">
+                                    <img src="./assets/images/Bachelor-of-Business-Administration-scaled.jpg"
+                                        alt="Nursing" />
+                                    <div class="programs-card-content">
+                                        <h3>B.Sc. in Nursing</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />12th with PCB & English with 45%
+                                            (Gen)/40% (Res).</p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong>
+                                            60
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                                <div class="programs-card">
+                                    <img src="./assets/images/Bachelor-of-Business-Administration-scaled.jpg"
+                                        alt="Nursing" />
+                                    <div class="programs-card-content">
+                                        <h3>B.Sc. in Nursing</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />12th with PCB & English with 45%
+                                            (Gen)/40% (Res).</p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong>
+                                            60
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Masters Cards -->
+                        <div class="programs-tab-content" id="masters">
+                            <div class="programs-grid">
+                                <div class="programs-card">
+                                    <img src="./assets/images/Bachelor-of-Physiotherapy-BPT-scaled.jpg" alt="MSC" />
+                                    <div class="programs-card-content">
+                                        <h3>M.Sc. Clinical Psychology</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />Graduation in Psychology or
+                                            related
+                                            fields.</p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 90,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 1,10,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong>
+                                            40
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                                <div class="programs-card">
+                                    <img src="./assets/images/Bachelor-of-Physiotherapy-BPT-scaled.jpg" alt="MSC" />
+                                    <div class="programs-card-content">
+                                        <h3>M.Sc. Clinical Psychology</h3>
+                                        <p><strong>Eligibility Criteria:</strong><br />Graduation in Psychology or
+                                            related
+                                            fields.</p>
+                                        <hr />
+                                        <p><strong>Fees For Goa Students:</strong><br />₹ 90,000</p>
+                                        <p><strong>Outstate Fees:</strong> ₹ 1,10,000 &nbsp;&nbsp;
+                                            <strong>Intake:</strong>
+                                            40
+                                        </p>
+                                        <a href="#" class="programs-apply-btn">Apply Now →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- facilities section -->
+
+            <section class="facilities-section"  >
+                <div class="facilities-container">
+                    <div class="facilities-left">
+                        <p class="facilities-subtitle">Our Facilities</p>
+                        <h2 class="facilities-heading">
+                            We Are Redefining Education<br />
+                            With the finest campus
+                        </h2>
+                    </div>
+                    <div class="facilities-right">
+                        <p class="facilities-desc">
+                            Parul University(Proposed) Goa, is home to world-class facilities designed to make your
+                            learning experience truly memorable. Embrace an educational journey that ignites
+                            intellectual curiosity and nurtures intuitive learning among the best facilities.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- campus facilities section -->
+
+            <section class="campus-facilities-section"  >
+                <div class="campus-facilities-container">
+
+                    <div class="facility-card"
+                        style="background-image: url('./assets/images/Administrative-Block-View-2-1-2048x1365.jpg')">
+                        <div class="facility-overlay">
+                            <h3>Academic Zones</h3>
+                            <p>Classrooms, labs, and libraries with descriptions of facilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card"
+                        style="background-image: url('./assets/images/Hostel-Block-View-2-1-2048x1365.jpg')">
+                        <div class="facility-overlay">
+                            <h3>Student Residences</h3>
+                            <p>Comfortable and eco-friendly housing options.</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card"
+                        style="background-image: url('./assets/images/Central-Vista-Aerial-View-1-2048x1365.jpg')">
+                        <div class="facility-overlay">
+                            <h3>Cultural Hubs</h3>
+                            <p>Amphitheater and spaces for arts and events.</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card"
+                        style="background-image: url('./assets/images/Cafeteria-adjoining-Swimming-pool-1-2048x1365.jpg')">
+                        <div class="facility-overlay">
+                            <h3>Dining Facilities</h3>
+                            <p>Multi-cuisine cafeterias and food courts.</p>
+                        </div>
+                    </div>
+                    <div class="facility-card facility-card--wide"
+                        style="background-image: url('./assets/images/Gym-and-Activity-Centre-2-2048x1365.jpg')">
+                        <div class="facility-overlay">
+                            <h3>Sports & Recreation</h3>
+                            <p>Indoor and outdoor sports complexes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- footer section -->
+
+            <footer class="footer-section"  >
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="./assets/images/Goa-Proposed-Logo-1024x243.png" alt="Parul University Logo" />
+                    </div>
+                    <p class="footer-description">
+                        Parul University(Proposed) Goa is a not-for-profit, world-class institution,<br />
+                        nestled in the heart of Goa, established in 2025 by the Parul Education Foundation.
+                    </p>
+
+                    <div class="footer-info">
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Campus:</strong> Parul University(Proposed),
+                            Goa
+                            Campus
+                            Quitol, Ta Quepem, Dist: South Goa</p>
+                        <p><i class="fas fa-map-pin"></i> <strong>Admissions Office:</strong> Shop No. CF-41, Alfran
+                            Plaza,
+                            opp.
+                            Don Bosco High School, Near Municipal Market, Panaji, Goa 403001</p>
+                        <p><i class="fas fa-phone-alt"></i> 1800 890 9090</p>
+                        <p><i class="fas fa-envelope"></i> admissions@goa.paruluniversity.ac.in</p>
+                    </div>
+
+                    <hr class="footer-divider" />
+
+                    <p class="footer-bottom">
+                        Copyright © 2025. All Rights Reserved by <strong>Parul Education Foundation</strong>
                     </p>
                 </div>
-            </div>
-
-            <!-- Bottom 3 Images -->
-            <div class="bottom-row">
-                <div class="gallery-card">
-                    <img src="./assets/images/NIRF-1-768x828.png" alt="Gallery Image 1">
-                </div>
-                <div class="gallery-card">
-                    <img src="./assets/images/QS-1-768x828.png" alt="Gallery Image 3">
-                </div>
-                <div class="gallery-card">
-                    <img src="./assets/images/NIRF-1-768x828.png" alt="Gallery Image 2">
-                </div>
-
-            </div>
-
-        </div>
-    </section>
+            </footer>
 
 
 
-    <!-- intro section -->
 
-    <section class="intro-section">
-        <div class="intro-container">
-            <div class="intro-left">
-                <p class="small-text">Here is what happens when</p>
-                <h2 class="main-heading">A Unique Global Destination Meets A Leading University</h2>
-            </div>
-            <div class="intro-right">
-                <p>
-                    Parul University (Proposed) Goa is a not-for-profit, world-class institution, nestled in the heart
-                    of Goa,
-                    established in 2025 by the Parul Education Foundation to redefine higher education through an
-                    immersive experience
-                    of quality and excellence at the shores of India’s coastal paradise. This is more than just a
-                    University, this is a
-                    one of a kind experience that turns your education into a lifelong lifestyle of learning, allowing
-                    you to live your
-                    dreams, while shaping your future.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- campus section -->
-
-    <section class="campus-section">
-        <div class="campus-overlay">
-
-        </div>
-    </section>
-
-
-    <!-- discovery section -->
-
-
-    <section class="discovery-section">
-        <div class="discovery-container">
-            <!-- Left Content -->
-            <div class="discovery-left">
-                <p class="small-heading">Academic Excellence</p>
-                <h2 class="main-heading">
-                    You Will Discover A<br>
-                    One Of A Kind<br>
-                    Destination Of<br>
-                    Learning
-                </h2>
-                <p class="desc-text">
-                    Embark on a journey of knowledge, discovery, and growth at Parul University(Proposed) Goa.
-                </p>
-                <div class="arrow-button">
-                    <img src="./assets/images/vector-6684e1fbc6b8f.png" alt="curve arrow">
-                    <a href="#" class="apply-btn">Apply Now →</a>
-                </div>
-            </div>
-
-            <!-- Right Image Grid -->
-            <div class="discovery-right">
-                <div class="grid-box">
-                    <div class="card" style="background-image: url('./assets/images/one.jpg')">
-                        <div class="card-gradient-overlay"></div>
-                        <div class="overlay-text">Where The Programs Are Global & In-Demand</div>
-                    </div>
-                    <div class="card" style="background-image: url('./assets/images/two.jpg')">
-                        <div class="card-gradient-overlay"></div>
-                        <div class="overlay-text">Where The Campus Has Unique Infrastructure</div>
-                    </div>
-                    <div class="card" style="background-image: url('./assets/images/three.jpg')">
-                        <div class="card-gradient-overlay"></div>
-                        <div class="overlay-text">Where The Educators Are Top of The Industry</div>
-                    </div>
-                    <div class="card" style="background-image: url('./assets/images/four.jpg')">
-                        <div class="card-gradient-overlay"></div>
-                        <div class="overlay-text">Where Learning Is Fun and Vibrant</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="program-section">
-        <div class="program-container">
-          <!-- Left Side -->
-          <div class="program-left">
-            <h2>
-              With Our Unique Industry-<br />
-              Relevant Programs Designed<br />
-              For You!
-            </h2>
-          </div>
-      
-          <!-- Right Side -->
-          <div class="program-right">
-            <p>Explore Our Upcoming<br />Programs</p>
-          </div>
-        </div>
-      </section>
-
-      
-
-
-
-      <!-- tab switching section -->
-
-      <section class="programs-section">
-        <div class="programs-container">
-          <!-- Tabs -->
-          <div class="programs-tabs">
-            <button class="programs-tab active" data-tab="diploma">Diploma</button>
-            <button class="programs-tab" data-tab="bachelor">Bachelor</button>
-            <button class="programs-tab" data-tab="masters">Masters</button>
-          </div>
-      
-          <!-- Cards Grid -->
-          <div class="programs-cards">
-            <!-- Diploma Cards -->
-            <div class="programs-tab-content" id="diploma" style="display: block;">
-              <div class="programs-grid">
-                <!-- Sample Card -->
-                <div class="programs-card">
-                  <img src="./assets/images/Diploma-in-Pharmacy-D.Pharm_-scaled.jpg" alt="Diploma" />
-                  <div class="programs-card-content">
-                    <h3>Diploma in Medical Lab Tech</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />10th Pass from a recognized board.</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 30,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 45,000 &nbsp;&nbsp; <strong>Intake:</strong> 40</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-                <div class="programs-card">
-                  <img src="./assets/images/Diploma-in-Pharmacy-D.Pharm_-scaled.jpg" alt="Diploma" />
-                  <div class="programs-card-content">
-                    <h3>Diploma in Medical Lab Tech</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />10th Pass from a recognized board.</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 30,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 45,000 &nbsp;&nbsp; <strong>Intake:</strong> 40</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-                <div class="programs-card">
-                  <img src="./assets/images/Diploma-in-Pharmacy-D.Pharm_-scaled.jpg" alt="Diploma" />
-                  <div class="programs-card-content">
-                    <h3>Diploma in Medical Lab Tech</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />10th Pass from a recognized board.</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 30,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 45,000 &nbsp;&nbsp; <strong>Intake:</strong> 40</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Bachelor Cards -->
-            <div class="programs-tab-content" id="bachelor">
-              <div class="programs-grid">
-                <div class="programs-card">
-                  <img src="./assets/images/B.Scnormal-1-scaled.jpg" alt="BPharm" />
-                  <div class="programs-card-content">
-                    <h3>Bachelor of Pharmacy (B.Pharm.)</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />12th with PCM/PCB from a recognized board.</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp; <strong>Intake:</strong> 100</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-                <div class="programs-card">
-                  <img src="./assets/images/B.Tech_.-Computer-Science-Engineering-scaled.jpg" alt="BPT" />
-                  <div class="programs-card-content">
-                    <h3>Bachelor of Physiotherapy (BPT)</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />12th with PCB from a recognized board.</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp; <strong>Intake:</strong> 100</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-                <div class="programs-card">
-                  <img src="./assets/images/Bachelor-of-Business-Administration-scaled.jpg" alt="Nursing" />
-                  <div class="programs-card-content">
-                    <h3>B.Sc. in Nursing</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />12th with PCB & English with 45% (Gen)/40% (Res).</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp; <strong>Intake:</strong> 60</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-                <div class="programs-card">
-                  <img src="./assets/images/Bachelor-of-Business-Administration-scaled.jpg" alt="Nursing" />
-                  <div class="programs-card-content">
-                    <h3>B.Sc. in Nursing</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />12th with PCB & English with 45% (Gen)/40% (Res).</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp; <strong>Intake:</strong> 60</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-                <div class="programs-card">
-                  <img src="./assets/images/Bachelor-of-Business-Administration-scaled.jpg" alt="Nursing" />
-                  <div class="programs-card-content">
-                    <h3>B.Sc. in Nursing</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />12th with PCB & English with 45% (Gen)/40% (Res).</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp; <strong>Intake:</strong> 60</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-                <div class="programs-card">
-                  <img src="./assets/images/Bachelor-of-Business-Administration-scaled.jpg" alt="Nursing" />
-                  <div class="programs-card-content">
-                    <h3>B.Sc. in Nursing</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />12th with PCB & English with 45% (Gen)/40% (Res).</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 1,00,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 1,20,000 &nbsp;&nbsp; <strong>Intake:</strong> 60</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Masters Cards -->
-            <div class="programs-tab-content" id="masters">
-              <div class="programs-grid">
-                <div class="programs-card">
-                  <img src="./assets/images/Bachelor-of-Physiotherapy-BPT-scaled.jpg" alt="MSC" />
-                  <div class="programs-card-content">
-                    <h3>M.Sc. Clinical Psychology</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />Graduation in Psychology or related fields.</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 90,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 1,10,000 &nbsp;&nbsp; <strong>Intake:</strong> 40</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-                <div class="programs-card">
-                  <img src="./assets/images/Bachelor-of-Physiotherapy-BPT-scaled.jpg" alt="MSC" />
-                  <div class="programs-card-content">
-                    <h3>M.Sc. Clinical Psychology</h3>
-                    <p><strong>Eligibility Criteria:</strong><br />Graduation in Psychology or related fields.</p>
-                    <hr />
-                    <p><strong>Fees For Goa Students:</strong><br />₹ 90,000</p>
-                    <p><strong>Outstate Fees:</strong> ₹ 1,10,000 &nbsp;&nbsp; <strong>Intake:</strong> 40</p>
-                    <a href="#" class="programs-apply-btn">Apply Now →</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-         
-      
-          </div>
-        </div>
-      </section>
-      
-
-
-      <!-- facilities section -->
-
-      <section class="facilities-section">
-        <div class="facilities-container">
-          <div class="facilities-left">
-            <p class="facilities-subtitle">Our Facilities</p>
-            <h2 class="facilities-heading">
-              We Are Redefining Education<br />
-              With the finest campus
-            </h2>
-          </div>
-          <div class="facilities-right">
-            <p class="facilities-desc">
-              Parul University(Proposed) Goa, is home to world-class facilities designed to make your
-              learning experience truly memorable. Embrace an educational journey that ignites
-              intellectual curiosity and nurtures intuitive learning among the best facilities.
-            </p>
-          </div>
-        </div>
-      </section>
-      
-
-
-      <!-- campus facilities section -->
-
-      <section class="campus-facilities-section">
-        <div class="campus-facilities-container">
-      
-          <div class="facility-card" style="background-image: url('./assets/images/Administrative-Block-View-2-1-2048x1365.jpg')">
-            <div class="facility-overlay">
-              <h3>Academic Zones</h3>
-              <p>Classrooms, labs, and libraries with descriptions of facilities.</p>
-            </div>
-          </div>
-      
-          <div class="facility-card" style="background-image: url('./assets/images/Hostel-Block-View-2-1-2048x1365.jpg')">
-            <div class="facility-overlay">
-              <h3>Student Residences</h3>
-              <p>Comfortable and eco-friendly housing options.</p>
-            </div>
-          </div>
-      
-          <div class="facility-card" style="background-image: url('./assets/images/Central-Vista-Aerial-View-1-2048x1365.jpg')">
-            <div class="facility-overlay">
-              <h3>Cultural Hubs</h3>
-              <p>Amphitheater and spaces for arts and events.</p>
-            </div>
-          </div>
-      
-          <div class="facility-card" style="background-image: url('./assets/images/Cafeteria-adjoining-Swimming-pool-1-2048x1365.jpg')">
-            <div class="facility-overlay">
-              <h3>Dining Facilities</h3>
-              <p>Multi-cuisine cafeterias and food courts.</p>
-            </div>
-          </div>
-          <div class="facility-card facility-card--wide" style="background-image: url('./assets/images/Gym-and-Activity-Centre-2-2048x1365.jpg')">
-            <div class="facility-overlay">
-              <h3>Sports & Recreation</h3>
-              <p>Indoor and outdoor sports complexes.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-
-<!-- footer section -->
-
-<footer class="footer-section">
-    <div class="footer-container">
-      <div class="footer-logo">
-        <img src="./assets/images/Goa-Proposed-Logo-1024x243.png" alt="Parul University Logo" />
-      </div>
-      <p class="footer-description">
-        Parul University(Proposed) Goa is a not-for-profit, world-class institution,<br />
-        nestled in the heart of Goa, established in 2025 by the Parul Education Foundation.
-      </p>
-  
-      <div class="footer-info">
-        <p><i class="fas fa-map-marker-alt"></i> <strong>Campus:</strong> Parul University(Proposed), Goa Campus Quitol, Ta Quepem, Dist: South Goa</p>
-        <p><i class="fas fa-map-pin"></i> <strong>Admissions Office:</strong> Shop No. CF-41, Alfran Plaza, opp. Don Bosco High School, Near Municipal Market, Panaji, Goa 403001</p>
-        <p><i class="fas fa-phone-alt"></i> 1800 890 9090</p>
-        <p><i class="fas fa-envelope"></i> admissions@goa.paruluniversity.ac.in</p>
-      </div>
-  
-      <hr class="footer-divider" />
-  
-      <p class="footer-bottom">
-        Copyright © 2025. All Rights Reserved by <strong>Parul Education Foundation</strong>
-      </p>
-    </div>
-  </footer>
-  
-
-
-      <script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
