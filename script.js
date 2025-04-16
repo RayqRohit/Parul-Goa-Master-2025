@@ -1,3 +1,16 @@
+const stateCityMap = {
+    "Gujarat": ["Ahmedabad", "Vadodara", "Surat"],
+    "Maharashtra": ["Mumbai", "Pune", "Nagpur"],
+    "Delhi": ["New Delhi", "Dwarka", "Rohini"]
+  };
+
+  const programSpecializationMap = {
+      "Diploma": ["Pharmacy", "Medical Lab Tech", "Physiotherapy"],
+    "Engineering": ["Computer Science", "Information Technology", "Mechanical", "Civil"],
+    "Management": ["Marketing", "Finance", "Human Resources"],
+  };
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll(".programs-tab");
@@ -23,6 +36,38 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const stateSelect = document.getElementById("state");
+    const citySelect = document.getElementById("city");
+    const programSelect = document.getElementById("program");
+    const specializationSelect = document.getElementById("specialization");
+
+    stateSelect.addEventListener("change", function () {
+      const selectedState = this.value;
+      const cities = stateCityMap[selectedState] || [];
+      citySelect.innerHTML = '<option value="" disabled selected>Select City</option>';
+      cities.forEach(city => {
+        const option = document.createElement("option");
+        option.value = city;
+        option.textContent = city;
+        citySelect.appendChild(option);
+      });
+    });
+
+    programSelect.addEventListener("change", function () {
+      const selectedProgram = this.value;
+      const specs = programSpecializationMap[selectedProgram] || [];
+      specializationSelect.innerHTML = '<option value="" disabled selected>Select Specialization</option>';
+      specs.forEach(spec => {
+        const option = document.createElement("option");
+        option.value = spec;
+        option.textContent = spec;
+        specializationSelect.appendChild(option);
+      });
+    });
+  });
 
 
 
