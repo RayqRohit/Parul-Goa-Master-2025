@@ -19,47 +19,91 @@
 }
 
 /* NAVIGATION */
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 15px 20px;
-}
-
 nav {
-    background: #266ca9;
+  background: #266ca9;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  position: relative;
+}
 
 .logo {
-    height: 70px;
+  height: 70px;
 }
-
 .logo img {
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
 }
 
-
-
+/* Navigation Links */
 .nav-links {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-links a {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 16px;
-    transition: color 0.3s ease;
-
-    font-family: "Inter", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #ffd700;
 }
 
-.nav-links a:hover {
-    color: #ffd700;
+/* Hamburger + Close Button */
+.menu-toggle-btn {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1001;
+}
+
+#close {
+  display: none;
+  font-size: 40px;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Toggle active state */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
 }
 
 /* HERO CONTENT */
@@ -595,8 +639,9 @@ nav {
   
   .programs-card img {
     width: 100%;
-    height: 250px;
+    height: 370px;
     object-fit: cover;
+    
   }
   
   .programs-card-content {
