@@ -8,6 +8,17 @@ hamburger.addEventListener("click", () => {
 
 
 
+const navLinkItems = document.querySelectorAll(".nav-links a");
+
+navLinkItems.forEach(link => {
+  link.addEventListener("click", () => {
+    // Close the nav
+    navLinks.classList.remove("open");
+    hamburger.classList.remove("active");
+  });
+});
+
+
 const stateCityMap = {
   "Gujarat": ["Ahmedabad", "Vadodara", "Surat"],
   "Maharashtra": ["Mumbai", "Pune", "Nagpur"],

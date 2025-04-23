@@ -106,7 +106,7 @@
         /* slightly darker for more clarity on text/images */
     }
 
-   
+
 }
 
 
@@ -350,8 +350,12 @@
         padding-bottom: 0;
     }
 
+    .campus-facilities-container {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+      }
 
-    
+
+
 }
 
 
@@ -411,7 +415,7 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .enquiry-form{
+    .enquiry-form {
         width: 100%;
     }
 
@@ -435,60 +439,60 @@
 
     .gallery-section {
         padding: 50px 15px;
-      }
-    
-      .top-image-container {
+    }
+
+    .top-image-container {
         margin-bottom: 40px;
         border-radius: 10px;
-      }
-    
-      .top-image {
+    }
+
+    .top-image {
         border-radius: 10px;
-      }
-    
-      .image-overlay {
+    }
+
+    .image-overlay {
         border-radius: 10px;
-      }
-    
-      .top-text {
+    }
+
+    .top-text {
         top: 30%;
         width: 95%;
         padding: 0 10px;
-      }
-    
-      .top-text h2 {
+    }
+
+    .top-text h2 {
         font-size: 26px;
-      }
-    
-      .top-text h3 {
+    }
+
+    .top-text h3 {
         font-size: 20px;
-      }
-    
-      .top-text p {
+    }
+
+    .top-text p {
         font-size: 14px;
         line-height: 1.5;
-      }
-    
-      .bottom-row {
+    }
+
+    .bottom-row {
         flex-direction: column;
         gap: 16px;
-      }
-    
-      .gallery-card {
-        min-width: 100%;
-      }
-    
-      .gallery-card img {
-        border-radius: 10px;
-      }
+    }
 
-      .top-text h2 {
+    .gallery-card {
+        min-width: 100%;
+    }
+
+    .gallery-card img {
+        border-radius: 10px;
+    }
+
+    .top-text h2 {
         font-size: 32px;
         margin-top: 20px;
         line-height: 1.2;
     }
 
-    .top-text p{
+    .top-text p {
         display: none;
     }
 
@@ -500,7 +504,7 @@
     }
 
 
-    .program-right p{
+    .program-right p {
         padding-left: 0;
     }
 
@@ -510,44 +514,54 @@
     }
 
 
-    
+
     .grid-box {
-        grid-template-columns: 1fr; /* Stack in 1 column */
-      }
-    
-      .card:nth-child(2),
-      .card:nth-child(4) {
-        margin-top: 0; /* Remove stagger effect */
-      }
-    
-      .main-heading {
+        grid-template-columns: 1fr;
+        /* Stack in 1 column */
+    }
+
+    .card:nth-child(2),
+    .card:nth-child(4) {
+        margin-top: 0;
+        /* Remove stagger effect */
+    }
+
+    .main-heading {
         font-size: 32px;
         text-align: center;
-      }
-    
-      .desc-text {
+    }
+
+    .desc-text {
         text-align: center;
-      }
-    
-      .arrow-button {
+    }
+
+    .arrow-button {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
-      }
-    
-      .apply-btn {
+    }
+
+    .apply-btn {
         transform: rotate(0deg);
         margin-top: 20px;
         padding: 12px 20px;
         border-radius: 30px;
         font-size: 15px;
-      }
-    
-      .arrow-button img {
+    }
+
+    .arrow-button img {
         width: 80px;
+    }
+
+
+    .campus-facilities-container {
+        grid-template-columns: 1fr; /* Stack cards vertically */
       }
 
-    
+      .campus-facilities-container .facility-card:last-child {
+        display: none;
+      }
+
 
 }
 
@@ -619,21 +633,22 @@
         text-align: center;
         flex-direction: column;
         justify-content: center;
-      }
-    
-      .hero-content {
+    }
+
+    .hero-content {
         width: 100%;
-      }
-    
-      .hero-top {
+    }
+
+    .hero-top {
         flex-direction: column;
         font-size: 16px;
         gap: 4px;
         margin-bottom: 10px;
         align-items: center;
-      }
-    
-      .welcome-icon img, .welcome-icon svg {
+    }
+
+    .welcome-icon img,
+    .welcome-icon svg {
         width: 82px;
         height: 64px;
     }
@@ -641,30 +656,30 @@
     .welcome-text {
         font-size: 33px;
     }
-    
-      .hero h1 {
+
+    .hero h1 {
         font-size: 28px;
         line-height: 1.3;
         margin-bottom: 10px;
-      }
-    
-      .hero .subtext {
+    }
+
+    .hero .subtext {
         font-size: 19px;
         margin-bottom: 10px;
-      }
-    
-      .hero h2 {
+    }
+
+    .hero h2 {
         font-size: 47px;
         margin: 10px 0 20px;
-      }
-    
-      .btn-primary {
+    }
+
+    .btn-primary {
         font-size: 14px;
         padding: 12px 20px;
         border-radius: 6px;
-      }
+    }
 
-      .top-text {
+    .top-text {
         top: 48%;
         width: 100%;
         padding: 0 10px;
@@ -675,43 +690,45 @@
 
 
     .grid-box {
-        grid-template-columns: 1fr; /* Stack in 1 column */
-      }
-    
-      .card:nth-child(2),
-      .card:nth-child(4) {
-        margin-top: 0; /* Remove stagger effect */
-      }
-    
-      .main-heading {
+        grid-template-columns: 1fr;
+        /* Stack in 1 column */
+    }
+
+    .card:nth-child(2),
+    .card:nth-child(4) {
+        margin-top: 0;
+        /* Remove stagger effect */
+    }
+
+    .main-heading {
         font-size: 32px;
         text-align: center;
-      }
-    
-      .desc-text {
+    }
+
+    .desc-text {
         text-align: center;
-      }
-    
-      .arrow-button {
+    }
+
+    .arrow-button {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
-      }
-    
-      .apply-btn {
+    }
+
+    .apply-btn {
         transform: rotate(0deg);
         margin-top: 20px;
         padding: 12px 20px;
         border-radius: 30px;
         font-size: 15px;
-      }
-    
-      .arrow-button img {
+    }
+
+    .arrow-button img {
         width: 80px;
-      }
+    }
 
 
-      .programs-tab {
+    .programs-tab {
         padding: 15px 45px;
     }
 
@@ -719,7 +736,7 @@
         font-size: 33px;
     }
 
-    .top-text h3{
+    .top-text h3 {
         display: none;
     }
 
